@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfigurationSettings">
+
+    <TextView
+        android:id="@+id/textView_AXA_Z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Axa Z"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup_Axa_Y" />
+
+    <TextView
+        android:id="@+id/textView_BRAT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Brat"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_AXA_X"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Axa X"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_BRAT" />
+
+    <TextView
+        android:id="@+id/textView_AXA_Y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="Axa Y"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_BRAT" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_Axa_X"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_AXA_X">
+
+        <RadioButton
+            android:id="@+id/radioButton_Fullstep_X"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Fullstep s*32" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Microstep_X"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Microstep s*16" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Picostep_X"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Picostep s*1" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_Axa_Y"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_AXA_Y">
+
+        <RadioButton
+            android:id="@+id/radioButton_Fullstep_Y"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Fullstep s*32" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Microstep_Y"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Microstep s*16" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Picostep_Y"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Picostep s*1" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_Axa_Z"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_AXA_Z">
+
+        <RadioButton
+            android:id="@+id/radioButton_Fullstep_Z"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Fullstep s*32" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Microstep_Z"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Microstep s*16" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Picostep_Z"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Picostep s*1" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonApplySettings"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Apply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup_Axa_Z" />
+
+    <Switch
+        android:id="@+id/switch_roti_brat_Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Roti/Brat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView_LeftAndRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Left and Right "
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup_Back" />
+
+    <TextView
+        android:id="@+id/textView_ROTI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Roti"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_FRONT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Front"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ROTI" />
+
+    <TextView
+        android:id="@+id/textView_BACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="Back"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ROTI" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_Front"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_FRONT">
+
+        <RadioButton
+            android:id="@+id/radioButton_Fullstep_FRONT"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Fullstep s*32" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Microstep_FRONT"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Microstep s*16" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Picostep_FRONT"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Picostep s*1" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_Back"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_BACK">
+
+        <RadioButton
+            android:id="@+id/radioButton_Fullstep_BACK"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Fullstep s*32" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Microstep_BACK"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Microstep s*16" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Picostep_BACK"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Picostep s*1" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_LeftAndRight"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_LeftAndRight">
+
+        <RadioButton
+            android:id="@+id/radioButton_Fullstep_LeftAndRight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Fullstep s*32" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Microstep_LeftAndRight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Microstep s*16" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Picostep_LeftAndRight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Picostep s*1" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/close_settings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_close_24" />
+
+
+</android.support.constraint.ConstraintLayout>

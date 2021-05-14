@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MakeScenarioActivty">
+
+    <ImageView
+        android:id="@+id/arrow_FRONT_R_SCENARIO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="70dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrowfront" />
+
+    <ImageView
+        android:id="@+id/arrow_BACK_R_SCENARIO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrowback" />
+
+    <ImageView
+        android:id="@+id/arrow_RIGHT_R_SCENARIO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="150dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/arrowright" />
+
+    <ImageView
+        android:id="@+id/arrow_LEFT_R_SCENARIO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrowleft" />
+
+    <ImageView
+        android:id="@+id/arrow_Z_LEFT_SCENARIO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrowrotate2" />
+
+    <ImageView
+        android:id="@+id/arrow_Y_BACK_SCENARIO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="50dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toTopOf="@+id/arrow_Y_FRONT_SCENARIO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/arrowleft" />
+
+    <ImageView
+        android:id="@+id/arrow_Y_FRONT_SCENARIO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="30dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toTopOf="@+id/arrow_Z_RIGHT_SCENARIO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/arrowright" />
+
+    <ImageView
+        android:id="@+id/arrow_X_UP_SCENARIO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="70dp"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arrow_Z_LEFT_SCENARIO"
+        app:srcCompat="@drawable/arrowfront" />
+
+    <ImageView
+        android:id="@+id/arrow_X_DOWN_SCENARIO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:rotation="-90"
+        app:layout_constraintEnd_toStartOf="@+id/arrow_X_UP_SCENARIO"
+        app:layout_constraintTop_toBottomOf="@+id/arrow_Z_LEFT_SCENARIO"
+        app:srcCompat="@drawable/arrowfront" />
+
+    <ImageView
+        android:id="@+id/arrow_Z_RIGHT_SCENARIO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/arrowrotate" />
+
+    <Switch
+        android:id="@+id/switch_roti_brat_SCENARIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:rotation="90"
+        android:text="Roti/Brat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/config_settings_SCENARIO"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:rotation="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings" />
+
+    <ImageView
+        android:id="@+id/brat_claw_SCENARIO"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="70dp"
+        android:rotation="-90"
+        app:layout_constraintStart_toStartOf="@+id/arrow_RIGHT_R_SCENARIO"
+        app:layout_constraintTop_toBottomOf="@+id/arrow_FRONT_R_SCENARIO"
+        app:srcCompat="@drawable/claw" />
+
+    <ToggleButton
+        android:id="@+id/brat_on_off_EN_SCENARIO"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="50dp"
+        android:rotation="90"
+        android:text="ToggleButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <ToggleButton
+        android:id="@+id/roti_on_off_EN_SCENARIO"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="50dp"
+        android:rotation="90"
+        android:text="ToggleButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

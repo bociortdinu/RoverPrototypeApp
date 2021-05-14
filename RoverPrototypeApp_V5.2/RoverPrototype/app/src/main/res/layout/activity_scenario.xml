@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScenarioActivity">
+
+    <ImageView
+        android:id="@+id/image_Scenario1_OFF"
+        android:layout_width="151dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="100dp"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/scriptoff" />
+
+    <ImageView
+        android:id="@+id/image_Scenario2_OFF"
+        android:layout_width="151dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="50dp"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_Scenario1_OFF"
+        app:srcCompat="@drawable/scriptoff" />
+
+    <ImageView
+        android:id="@+id/image_Scenario3_OFF"
+        android:layout_width="151dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="50dp"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_Scenario2_OFF"
+        app:srcCompat="@drawable/scriptoff" />
+
+    <ImageView
+        android:id="@+id/image_Scenario4_OFF"
+        android:layout_width="151dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="50dp"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_Scenario3_OFF"
+        app:srcCompat="@drawable/scriptoff" />
+
+    <ImageView
+        android:id="@+id/image_Scenario1_ON"
+        android:layout_width="151dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="100dp"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/scripton" />
+
+    <ImageView
+        android:id="@+id/image_Scenario2_ON"
+        android:layout_width="151dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="50dp"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_Scenario1_ON"
+        app:srcCompat="@drawable/scripton" />
+
+    <ImageView
+        android:id="@+id/image_Scenario3_ON"
+        android:layout_width="151dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="50dp"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_Scenario2_ON"
+        app:srcCompat="@drawable/scripton" />
+
+    <ImageView
+        android:id="@+id/image_Scenario4_ON"
+        android:layout_width="151dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="50dp"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_Scenario3_ON"
+        app:srcCompat="@drawable/scripton" />
+
+    <TextView
+        android:id="@+id/textView_Scenario1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="90"
+        android:text="New Scenario"
+        app:layout_constraintBottom_toBottomOf="@+id/image_Scenario1_OFF"
+        app:layout_constraintEnd_toStartOf="@+id/image_Scenario1_OFF"
+        app:layout_constraintTop_toTopOf="@+id/image_Scenario1_OFF" />
+
+    <TextView
+        android:id="@+id/textView_Scenario2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="90"
+        android:text="New Scenario"
+        app:layout_constraintBottom_toBottomOf="@+id/image_Scenario2_OFF"
+        app:layout_constraintEnd_toStartOf="@+id/image_Scenario2_OFF"
+        app:layout_constraintTop_toTopOf="@+id/image_Scenario2_OFF" />
+
+    <TextView
+        android:id="@+id/textView_Scenario3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="90"
+        android:text="New Scenario"
+        app:layout_constraintBottom_toBottomOf="@+id/image_Scenario3_OFF"
+        app:layout_constraintEnd_toStartOf="@+id/image_Scenario3_OFF"
+        app:layout_constraintTop_toTopOf="@+id/image_Scenario3_OFF" />
+
+    <TextView
+        android:id="@+id/textView_Scenario4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="90"
+        android:text="New Scenario"
+        app:layout_constraintBottom_toBottomOf="@+id/image_Scenario4_OFF"
+        app:layout_constraintEnd_toStartOf="@+id/image_Scenario4_OFF"
+        app:layout_constraintTop_toTopOf="@+id/image_Scenario4_OFF" />
+
+    <ImageView
+        android:id="@+id/btn_deleteScenario1"
+        android:layout_width="63dp"
+        android:layout_height="51dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/image_Scenario1_OFF"
+        app:layout_constraintStart_toEndOf="@+id/image_Scenario1_OFF"
+        app:layout_constraintTop_toTopOf="@+id/image_Scenario1_OFF"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageView
+        android:id="@+id/btn_deleteScenario2"
+        android:layout_width="63dp"
+        android:layout_height="51dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/image_Scenario2_OFF"
+        app:layout_constraintStart_toEndOf="@+id/image_Scenario2_OFF"
+        app:layout_constraintTop_toTopOf="@+id/image_Scenario2_OFF"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageView
+        android:id="@+id/btn_deleteScenario3"
+        android:layout_width="63dp"
+        android:layout_height="51dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/image_Scenario3_OFF"
+        app:layout_constraintStart_toEndOf="@+id/image_Scenario3_OFF"
+        app:layout_constraintTop_toTopOf="@+id/image_Scenario3_OFF"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageView
+        android:id="@+id/btn_deleteScenario4"
+        android:layout_width="63dp"
+        android:layout_height="51dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/image_Scenario4_OFF"
+        app:layout_constraintStart_toEndOf="@+id/image_Scenario4_OFF"
+        app:layout_constraintTop_toTopOf="@+id/image_Scenario4_OFF"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageView
+        android:id="@+id/imageView_back"
+        android:layout_width="37dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/back" />
+
+</android.support.constraint.ConstraintLayout>
